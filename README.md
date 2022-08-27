@@ -6,7 +6,7 @@ Robert Muller — Boston College
 
 ---
 
-[About](resources/about.md) — [Textbooks](resources/textbooks.md) — [Grading](resources/grading.md) — [Canvas](https://bostoncollege.instructure.com/courses/1614229) — [Piazza](https://piazza.com/class/ke7uxpkwqw643p) — [Cornell CS3110](https://www.cs.cornell.edu/courses/cs3110/2020sp/) — [SVM](https://dogfishbar.github.io/dogfishbar.github.io/)
+[About](resources/about.md) — [Textbooks](resources/textbooks.md) — [Grading](resources/grading.md) — [Canvas](https://bostoncollege.instructure.com/courses/1614229) — [Piazza](https://piazza.com/class/l7c8612dv3v2ez) — [Cornell CS3110](https://www.cs.cornell.edu/courses/cs3110/2020sp/) — [SVM](https://dogfishbar.github.io/dogfishbar.github.io/)
 
 [Manual](http://caml.inria.fr/pub/docs/manual-ocaml/index.html) — [OCaml.org](https://ocaml.org/) — [Stdlib](http://caml.inria.fr/pub/docs/manual-ocaml/libref/Stdlib.html) — [Lib](resources/libraries/lib.mli) — [Animate](resources/libraries/animate.mli) — [Image](resources/libraries/image.mli) — [Color](resources/libraries/color.mli) — [Animate Notes](./resources/libraries/animate/README.md)
 
@@ -21,21 +21,21 @@ Robert Muller — Boston College
 
 + **Instructor:** [Robert Muller](http://www.cs.bc.edu/~muller/)
 
-+ [Office Hours](https://bccte.zoom.us/j/3306891980): Tuesdays 10AM - 12PM, Wednesdays 1PM - 3PM and by appointment Tuesday through Friday as available.
++ [Office Hours](https://bccte.zoom.us/j/3306891980): Tuesdays 3PM - 5PM, Wednesdays 4PM - 5PM.
 
 **Teaching Assistants:**
 
+Lab meets Wednesdays 3PM - 3:50PM in 245 Beacon St. Rm 103.
+
 <details open> <summary>Liam Murphy, Head Teaching Assistant</summary>
++ **Office Hours** Thursdays 2PM - 4PM.
 
-
-+ **Office Hours** Thursdays 1PM -- 4:00PM.
 
 </details>
 
-<details open> <summary>Nichole Lockwood</summary>
+<details open> <summary>Nicole Lockwood</summary>
 
-
-+ **Office Hours** Tuesdays 7PM -- 8PM, Fridays 12PM -- 2PM.
++ **Office Hours** Mondays 2PM - 3PM, Wednesdays 5PM - 7PM, Fridays 2PM - 3PM.
 
 </details>
 
