@@ -8,7 +8,7 @@ Robert Muller - Boston College
 
 ## Setting Up Your System
 
-In this course, we'll be developing code in a Unix environment on either MacOS Catalina or on a Windows 10 system. If you have an older version of one of these operating systems, you'll need to upgrade your system before proceeding further with problem set 1. If you cannot upgrade for one reason or another, please get in touch with the instructor.
+In this course, we'll be developing code in a Unix environment on either MacOS or under Windows. The instructions in this document work for recent versions of MacOS and for Windows 11 **FIX THIS** or for Build 18362 or higher of Windows 10, Version 1903. If you have an older version of one of these operating systems, you'll need to upgrade your system before proceeding further with problem set 1. If you cannot upgrade for one reason or another, please get in touch with the instructor.
 
 The coding environment that we're going to install has a lot of parts and the installation process involves many steps that have to be carried out carefully and exactly as specified. Some of the installation steps take a long time so set aside plenty of time for this work. If you run into problems with the installation process, please get in touch with a course staffer. Most of the installation steps will involve using a *command shell* to issue commands to the Unix operating system. Command shells may be new for you, but the Unix command shell is quite powerful and widely used so learning to work with it will be a good skill to develop in its own right.
 
@@ -22,16 +22,16 @@ When you accept the invitation, GitHub Classroom will make a private copy of the
 
 ![ready](./img/ready.png)
 
-So now you have your own *private* repository containing your copy of the problem set. (Well, your repo is mostly private, it's shared only with the course staff.) Your repo is hosted along with all of the others on our course GitHub site `https://github.com/BC-CSCI1103/`. If you visit that site, you'll see just a few repos, the ones that are privately owned by you and those that are public.
+So now you have your own *private* repository containing your copy of the problem set. Well, your repo is mostly private, it's shared only with the course staff. Your repo is hosted along with all of the others on our course GitHub site `https://github.com/BC-CSCI1103/`. If you visit that site, you'll see just a few repos, the ones that are privately owned by you and those that are public.
 
 We'll come back to the discussion of the course workflow after we've set up the software on your computer.
 
-## Setup for MacOS Catalina (10.15)
+## Setup for MacOS Monterey (12.0)
 
-+ **If you're using a Windows system, skip this section -- scroll down to *Setup for Windows 10*.**
-+ **If you're using a Mac running on older version of MacOS such as MacOS Mojave (10.14), consider upgrading your version of MacOS to Catalina. It's free in the App Store. If you upgrade, it's important that you complete the upgrade before following any of the steps below.**
++ **If you're using a Windows system, skip this section -- scroll down to *Setup for Windows*.**
++ **If you're using a Mac running a much older version of MacOS such as MacOS Mojave (10.14), consider upgrading your operating system to Monterey, it's free in the App Store. **
++ **If you do upgrade your operating system, it's important that you complete that upgrade before following any of the steps below.**
 + **Respond affirmatively with a Y when queried by any installation step.**
-+ **The installation process for Macs requires the installation of Xcode Developer Tools for Apple's App Store. Xcode requires around 8 Gigabytes of storage.**
 
 ---
 
@@ -95,67 +95,69 @@ We'll come back to the discussion of the course workflow after we've set up the 
    cd ~/csci1103
    ```
 
-   The tilde character `~` designates your home directory.
+   The tilde character `~` designates the path to your home directory.
 
 ### Setting up the OCaml Ecosystem
 
-1.  Visit Apple's App Store and install Xcode Developer Tools version 11.6 or better.
-
-2. Now use the Unix `git` command to retrieve some setup tools from our course site on GitHub.
-
-   ```bash
-   git clone https://github.com/BC-CSCI1103/setup.git
-   ```
-
-
-3. Install [MacPorts](https://www.macports.org/install.php), a utility for managing software packages on Macs.
+1. Install [MacPorts](https://www.macports.org/install.php), a utility for managing software packages on macOS.
 
    > Heads up! Do you already use another package manager such as Homebrew? If so, be aware that some of our course software doesn't work when supporting software has been installed with Homebrew. For the purposes of this course, please use MacPorts.
 
-   After installing MacPorts, X-out your command shell.
+   After installing MacPorts, quit the Terminal app and fire it up again.
 
-4. Fire up the Terminal app again and use MacPorts to install OCaml's package manager `opam` and a graphics support library `lablgtk`.
+2. Use the newly installed MacPorts package manager to install OCaml's package manager [opam](https://opam.ocaml.org/), a graphics support library `lablgtk2` and a handy CLI utility called `tree`.
 
-   > Heads up! The MacPorts app is invoked from the Unix command line as `port`. Also, you'll have to use `sudo` as shown, this will require you to enter your password.
+   > Heads up! 
+   >
+   > + MacPorts is invoked from the Unix command line as `port`. The `port` command writes files to privilege protected directories on your computer so it has to be run under the unix `sudo` command which prompts for a password. 
+   > + Note that in the process of installing these programs, you may be asked to install the *XCode Command Line Utilities*. We'll need these tools so install them as directed.
 
    ```bash
    sudo port install opam lablgtk2 tree
+   sudo port select --set python python310
    ```
 
-5. Initialize `opam`.
+3. Initialize `opam`. It's probably best to copy and paste the following two-command sequence -- the two quotation marks in the second command are backquotes (upper left, below the esc key). This command will not work if you type the normal single-quote marks.
 
    ```bash
    opam init
-   ```
-
-   > Heads up! Best to copy and paste the following command -- the two quotation marks are *backquotes* (upper left, below the `esc` key). This command won't work if you type the normal single-quote marks.
-
-   ```bash
    eval `opam config env`
    ```
 
-6. The installation script for OCaml's package manager `opam`, also installs the other main parts of the OCaml system. Fire up the OCaml interpreter to confirm that it's working.
+4. The installation script for OCaml's package manager `opam`, also installs the other main parts of the OCaml system. Fire up the OCaml interpreter to confirm that it's working.
+
+5. 
    ```bash
    ocaml
    ```
+
    You should see something like:
+
    ```ocaml
-   OCaml version 4.8
+   OCaml version 4.12
    #
    ```
-   It's fine if you have OCaml 4.11 instead. You can type in expressions as you like, ending them with two consecutive semi-colons `;;`. Type `Ctrl-d` (i.e., hold down the `Control` key and while still holding it, type the `d` key) to exit the REPL.
+   It's fine if you have OCaml 4.14 instead. You can type in expressions as you like, ending them with two consecutive semi-colons `;;`. Type `Ctrl-d` (i.e., hold down the `Control` key and while still holding it, type the `d` key) to exit the REPL.
+
+6. Now use the Unix `git` command to retrieve some setup tools from our course site on GitHub.
+
+   ```bash
+   git clone https://github.com/BC-CSCI1103/setup.git   
+   ```
 
 7. Install various OCaml packages. This is taken care of for you in a `configure` script. Type exactly or cut and paste:
+
    ```bash
    cd ~/csci1103/setup
    ./configure
    ```
 
-8. Install the [XQuartz](https://www.xquartz.org/) X-Window server.
+7. Install the [XQuartz](https://www.xquartz.org/) X-Window server.
 
-9. Reboot your computer.
+8. Reboot your computer.
 
-10. Test your OCaml setup. Type or cut and paste:
+9. Test your OCaml setup. Type or cut and paste:
+
 ```bash
 cd ~/csci1103/setup/test/stopNgo/src
 dune exec bin/main.exe
@@ -172,11 +174,54 @@ dune exec bin/main.exe
 
 </details>
 
-### Setting up the Atom Editor
+### Setting up your Editor
 
-The last step is setting up the code editor.
+The last step in the MacOS-specific installation process is to set up your code editor. You're welcome to use any text/code editor that you like. In this course, we're using [vscode](https://code.visualstudio.com/) as the default editor. It's now one of the industry standards and is well adapted to developing code in OCaml. 
 
-1. **Install** Download and install the [Atom editor, v 1.50.0](https://atom.io/). You're welcome to use whatever code editor you'd like: Atom, vscode, sublime text, emacs and vim all come to mind. Following the instructions here will leave you with a very serviceable Atom-based coding environment. Many CS students at BC use Atom for all of their CS courses at BC.
++ In previous semesters, we've encouraged students to use GitHub's [Atom](https://atom.io/) editor. But if you like it, you can certainly use it for this course, instructions for installing and configuring atom are below. **NB the Atom editor will be discontinued as of December 15, 2022. **
++ As you'll see, your instructor sometimes use the ancient and arcane but still-fantastic [emacs](https://www.gnu.org/software/emacs/) text editor. If you're feeling adventurous, give it a try! It's easy to install: `sudo port install emacs`.
+
+#### Setting up vscode
+
+1. Install the [vscode editor](https://code.visualstudio.com/download).
+
+2. Like other modern editors, vscode can be customized in various ways. In vscode parlance, these customizations come packaged up in [Extensions](https://marketplace.visualstudio.com/vscode). Use the Visual Studio Marketplace to search for and install the [OCaml Platform Extension](https://marketplace.visualstudio.com/items?itemName=ocamllabs.ocaml-platform).
+
+   <img src="./img/vscodeExtensionMarketplace.png"/>
+
+   > The OCaml Platform Extension depends on the `ocaml-lsp-server` opam package. This was installed for you earlier in the `configure` step.
+
+3. Fire up the vscode editor. This can be done either through the GUI by clicking on the vscode icon
+
+   <img src="./img/vscodeIcon.png" width="100px"/>
+
+   or better yet, by using the unix command shell. Type
+
+   ```bash
+   source ~/.bash_profile
+   cd ~/csci1103/setup/test/stopNgo/src/
+   code .
+   ```
+
+   > If this doesn't work, get in touch with course staff.
+
+   Once vscode is running, you should see something like below. The red arrow is pointing to a blocky icon denoting vscode's Extension manager. Select it.
+
+   <img src="./img/vscodeExtensions.png">
+
+   OCaml Platform has been installed on your computer, now you'll need to search for it and install it into vscode.
+
+   <img src="./img/vscodeInstallOCamlPlatform.png">Now close the Extension Manager by toggling its blocky icon (left), then open the file Explorer, its icon is top left. Also X-out the Get Started pane. You should see something like
+
+   <img src="./img/vscodeStopNgo.png">You'll find your working OCaml source files by opening the `bin` directory (red arrow) and you can fire up a unix Terminal from within vscode by selecting the circled X at bottom left (yellow arrow). Stowing away the Explorer by toggling its icon should leave you with something like this:
+   
+   <img src="./img/vscodeStopNgoReady.png">Try typing that `dune exec` line to confirm that all is working. If you see this behavior, congrats you're good to go! Scroll down past the atom and Windows setup sections to **Finishing up the Workflow** below.
+
+#### Setting up atom
+
+> Heads up: Atom is being discontinued, vscode is the recommended editor for this course.
+
+1. **Install** Download and install the [Atom editor, v 1.60.0](https://atom.io/). Following the instructions here will leave you with a very serviceable Atom-based coding environment. Many CS students at BC use Atom for all of their CS courses at BC.
 
    **After you've installed Atom, use the Finder to open your Applications folder to ensure that Atom has been installed there. You should see the Atom icon**
 
@@ -229,7 +274,11 @@ The last step is setting up the code editor.
 
 ---
 
-## Setup for Windows 10
+## Setup for Windows 
+
+# STOP HERE, WAITING TO UPGRADE Windows SO WE CAN USE WSL2; NEED Windows 11 or Windows 10, Version 1903, Build 18362 or later
+
+
 
 > + **These Instructions are cribbed in part from Cornell's CS3110 Spring 2020**
 > + **These instructions presume that you are running Windows 10. If you are running an earlier version of Windows, these instructions won't work.**
@@ -341,7 +390,8 @@ Now use the `pwd` command to confirm that the current working directory is `/hom
 1. cd /home/muller
 2. cd ~        # remember that ~ is an abbreviation for the file path /home/muller
 3. cd
-4. cd ..       # means set the current working directory to the parent directory, i.e., move up one level
+4. cd ..       # means set the current working directory to the parent directory, 
+               # i.e., move up one level
 ```
 
 Note that you can always move to the home directory for this course by typing `cd ~/csci1103`.
