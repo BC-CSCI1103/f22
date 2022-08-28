@@ -19,18 +19,16 @@ Robert Muller — Boston College
 
 + **Meets:** Tuesdays and Thursdays 12PM - 1:15PM, 245 Beacon St. Rm 125.
 
-+ **Instructor:** [Robert Muller](http://www.cs.bc.edu/~muller/)
++ **Instructor:** [Robert Muller](dogfishbar.github.io )
 
-+ [Office Hours](https://bccte.zoom.us/j/3306891980): Tuesdays 3PM - 5PM, Wednesdays 4PM - 5PM.
++ **Office Hours**: 245 Beacon St. Rm 508, Tuesdays 3PM - 5PM, Wednesdays 4PM - 5PM.
 
 **Teaching Assistants:**
 
-Lab meets Wednesdays 3PM - 3:50PM in 245 Beacon St. Rm 103.
+Lab meets 245 Beacon St. Rm 103, Wednesdays 3PM - 3:50PM.
 
 <details open> <summary>Liam Murphy, Head Teaching Assistant</summary>
 + **Office Hours** Thursdays 2PM - 4PM.
-
-
 </details>
 
 <details open> <summary>Nicole Lockwood</summary>
