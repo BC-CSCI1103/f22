@@ -10,9 +10,9 @@ Robert Muller - Boston College
 
 Like most CS courses, CSCI 1103 is very much a *learn by doing* course. Reflecting this, grades will emphasize the problem sets. Grades will be computed on a 200 point scale. The points are distributed as follows:
 
-+ 110 points over 7 open problem sets;
++ 110 points over 7 problem sets;
 
-+ 60 points over 3 closed problem sets, these are effectively take-home exams;
++ 60 points over 3 exams, two midterms and a final;
 
 + 30 points for lab, class and piazza participation.
 
