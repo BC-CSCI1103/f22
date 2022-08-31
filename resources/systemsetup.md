@@ -8,6 +8,10 @@ Robert Muller - Boston College
 
 ## Setting Up Your System
 
+**NOTE: The setup instructions for Windows are in DRAFT form and
+will be updated when the instructor has had the opportunity to try
+them on an appropriately configured Windows laptop.**
+
 In this course, we'll be developing code in a Unix environment on either MacOS or under Windows. The instructions in this document work for recent versions of MacOS and for Windows 11 and recent Windows 10, Version 1903. If you have an older version of one of these operating systems, you'll need to upgrade your system before proceeding further with problem set 1. If you cannot upgrade for one reason or another, please get in touch with the instructor.
 
 The coding environment that we're going to install has a lot of parts and the installation process involves many steps that have to be carried out carefully and exactly as specified. Some of the installation steps take a long time so set aside plenty of time for this work. If you run into problems with the installation process, please get in touch with a course staffer. Most of the installation steps will involve using a *command shell* to issue commands to the Unix operating system. Command shells may be new for you, but the Unix command shell is quite powerful and widely used so learning to work with it will be a good skill to develop in its own right.
