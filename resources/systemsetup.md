@@ -8,7 +8,7 @@ Robert Muller - Boston College
 
 ## Setting Up Your System
 
-In this course, we'll be developing code in a Unix environment on either MacOS or under Windows. The instructions in this document work for recent versions of MacOS and for Windows 11 **FIX THIS** or for Build 18362 or higher of Windows 10, Version 1903. If you have an older version of one of these operating systems, you'll need to upgrade your system before proceeding further with problem set 1. If you cannot upgrade for one reason or another, please get in touch with the instructor.
+In this course, we'll be developing code in a Unix environment on either MacOS or under Windows. The instructions in this document work for recent versions of MacOS and for Windows 11 and recent Windows 10, Version 1903. If you have an older version of one of these operating systems, you'll need to upgrade your system before proceeding further with problem set 1. If you cannot upgrade for one reason or another, please get in touch with the instructor.
 
 The coding environment that we're going to install has a lot of parts and the installation process involves many steps that have to be carried out carefully and exactly as specified. Some of the installation steps take a long time so set aside plenty of time for this work. If you run into problems with the installation process, please get in touch with a course staffer. Most of the installation steps will involve using a *command shell* to issue commands to the Unix operating system. Command shells may be new for you, but the Unix command shell is quite powerful and widely used so learning to work with it will be a good skill to develop in its own right.
 
@@ -178,7 +178,6 @@ dune exec bin/main.exe
 
 The last step in the MacOS-specific installation process is to set up your code editor. You're welcome to use any text/code editor that you like. In this course, we're using [vscode](https://code.visualstudio.com/) as the default editor. It's now one of the industry standards and is well adapted to developing code in OCaml. 
 
-+ In previous semesters, we've encouraged students to use GitHub's [Atom](https://atom.io/) editor. But if you like it, you can certainly use it for this course, instructions for installing and configuring atom are below. **NB the Atom editor will be discontinued as of December 15, 2022. **
 + As you'll see, your instructor sometimes use the ancient and arcane but still-fantastic [emacs](https://www.gnu.org/software/emacs/) text editor. If you're feeling adventurous, give it a try! It's easy to install: `sudo port install emacs`.
 
 #### Setting up vscode
@@ -217,126 +216,119 @@ The last step in the MacOS-specific installation process is to set up your code 
    
    <img src="./img/vscodeStopNgoReady.png">Try typing that `dune exec` line to confirm that all is working. If you see this behavior, congrats you're good to go! Scroll down past the atom and Windows setup sections to **Finishing up the Workflow** below.
 
-#### Setting up atom
+## Setting up Windows 
 
-> Heads up: Atom is being discontinued, vscode is the recommended editor for this course.
-
-1. **Install** Download and install the [Atom editor, v 1.60.0](https://atom.io/). Following the instructions here will leave you with a very serviceable Atom-based coding environment. Many CS students at BC use Atom for all of their CS courses at BC.
-
-   **After you've installed Atom, use the Finder to open your Applications folder to ensure that Atom has been installed there. You should see the Atom icon**
-
-   **<img src="./img/AtomIcon.png" width="100px" />**
-
-   **If you don't see the Atom icon in your Applications folder, drag it there.** Also consider dragging the icon to your task bar.  Now fire up Atom by double-clicking the icon, then, under the **Atom** menu item, select **Install Shell Commands**. Exit Atom.
-
-2. **Configure** Atom is an "extensible" editor. This means that it has processes in place for people to write and install *packages* of code that tailor the editor for particular applications. Executing the following command will install a number of packages that tailor Atom for OCaml. Type
-   ```bash
-   which apm
-   ```
-
-   <details><summary>This should return something like <tt>/usr/local/bin/apm</tt>.  If it doesn't, open this item.</summary>
-
-   If you didn't see <tt>/usr/local/bin/apm</tt>, it means that Atom didn't install the `apm` and `atom` shell commands for you. You may have failed to move Atom to the `Applications` folder. If so, try again. Then open Atom then under the *Atom* menu item select <b>Install Shell Commands</b>. Then exit Atom.
-   </details>
-
-   Now type
-
-   ```bash
-   cd ~/csci1103/setup
-   ./configureAtom
-   ```
-3. **Test** Now we can test whether or not your editor settings are working. Move to the testing area and fire up the Atom editor from the unix command shell by typing:
-
-   ```bash
-   cd ~/csci1103/setup/test/
-   atom .
-   ```
-
-   You should see Atom's welcome page with three or four tabs, `Project`, `Welcome` and `Welcome Guide`. (There may also be one related to "Telemetry".)   ![atomwelcome](./img/AtomOpen.png)
-
-   Dismiss all but the `Project` tab by X-ing them out (upper right). Now open the `hello` directory, then `src` then `bin` then select `main.ml`. You should see this
-
-   ![helloAtom](./img/helloAtom.png)
-   The tab labeled `main.ml` is displaying OCaml code. This code can be executed by using OCaml's *build manager* `dune`. In the Unix command shell, type
-   ```bash
-   cd ~/csci1103/setup/test/hello/src
-   dune exec bin/main.exe
-   ```
-   > Heads up! The bit on the last line must say `bin/main.exe` even though the `bin` folder has a file named `main.ml`.
-
-   Introduce an error in this code by deleting the quotation mark at the end of line 8. You should see
-
-   ![merlin](./img/merlinAtom.png)
-
-   the red dot on line 8 indicates that the OCaml editor support packages have found a problem with your code. Generally speaking, you'll want to make sure that your Atom editor window is free of these errors (i.e., no red dots!). If you restore the quotation mark the red dot will disappear.
-
-   If you don't see this behavior, contact a course staffer. If you do, great! You're alll done! Scroll down to **Finishing up the Workflow** below.
+> Our setup will be nearly identical to the one used in Cornell's CS3110 class. Normally I write our instructions and double-check them against those of other schools. However, as of the time of this writing, I do not have a working Windows laptop. So I am going to explicitly copy many of the instructions and text from the Cornell site, with their permission.
 
 ---
 
-## Setup for Windows 
+*Start of Clarkson@Cornell 3110 Windows Setup Instructions*
 
-# STOP HERE, WAITING TO UPGRADE Windows SO WE CAN USE WSL2; NEED Windows 11 or Windows 10, Version 1903, Build 18362 or later
+### Windows
 
+Unix development in Windows is made possible by the Windows Subsystem for Linux (WSL). If you have a recent version of Windows (build 20262, released November 2020, or newer), WSL is easy to install. If you don’t have that recent of a version, try running Windows Update to get it.
 
+**Tip**
+
+If you get an error about the “virtual machine” while installing WSL, you might need to enable virtualization in your machine’s BIOS. The instructions for that are dependent on the manufacturer of your machine. Try googling “enable virtualization [manufacturer] [model]”, substituting for the manufacturer and model of your machine. This [Red Hat Linux](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/virtualization_administration_guide/sect-virtualization-troubleshooting-enabling_intel_vt_and_amd_v_virtualization_hardware_extensions_in_bios) page might also help.
+
+**With a recent version of Windows,** and assuming you’ve never installed WSL before, here’s all you have to do:
+
+- Open Windows PowerShell as Administrator. To do that, click Start, type PowerShell, and it should come up as the best match. Click “Run as Administrator”, and click Yes to allow changes.
+- Run `wsl --install`. (Or, if you have already installed WSL but not Ubuntu before, then instead run `wsl --install -d Ubuntu`.) When the Ubuntu download is completed, it will likely ask you to reboot. Do so. The installation will automatically resume after the reboot.
+- You will be prompted to create a Unix username and password. You can use any username and password you wish. It has no bearing on your Windows username and password (though you are free to re-use those). Do not put a space in your username. Do not forget your password. You will need it in the future.
+
+**Warning**
+
+*Do not proceed* with these instructions if you were not prompted to create a Unix username and password. Something has gone wrong. Perhaps your Ubuntu installation did not complete correctly. Try uninstalling Ubuntu and reinstalling it through the Windows Start menu.
+
+Now skip to the “Ubuntu setup” paragraph below.
+
+**Without a recent version of Windows,** you will need to follow [Microsoft’s manual install instructions](https://docs.microsoft.com/en-us/windows/wsl/install-manual). WSL2 is preferred over WSL1 by OCaml (and WSL2 offers performance and functionality improvements), so install WSL2 if you can.
+
+**Ubuntu Setup**
+
+These rest of these instructions assume that you installed Ubuntu (20.04) as the Linux distribution. That is the default distribution in WSL. In principle other distributions should work, but might require different commands from this point forward.
+
+Open the Ubuntu app. (It might already be open if you just finished installing WSL.) You will be at the *Bash prompt*, which looks something like this:
+
+```
+user@machine:~$
+```
+
+**Warning**
+
+If that prompt instead looks like `root@...#`, something is wrong. Did you create a Unix username and password for Ubuntu in the earlier step above? If so, the username in this prompt should be the username you chose back then, not `root`. *Do not proceed* with these instructions if your prompt looks like `root@...#`. Perhaps you could uninstall Ubuntu and reinstall it.
+
+**Enable copy-and-paste:**
+
+- Click on the Ubuntu icon on the top left of the window.
+- Click Properties
+- Make sure “Use Ctrl+Shift+C/V as Copy/Paste” is checked.
+
+Now Ctrl+Shift+C will copy and Ctrl+Shift+V will paste into the terminal. Note that you have to include Shift as part of that keystroke.
+
+Run the following command to update the *APT package manager*, which is what helps to install Unix packages:
+
+```
+sudo apt update
+```
+
+You will be prompted for the Unix password you chose. The prefix `sudo` means to run the command as the administrator, aka “super user”. In other words, do this command as super user, hence, “sudo”.
+
+**Warning**
+
+Running commands with `sudo` is potentially dangerous and should not be done lightly. Do not get into the habit of putting `sudo` in front of commands, and do not randomly try it without reason.
+
+Now run this command to upgrade all the APT software packages:
+
+```
+sudo apt upgrade -y
+```
+
+Then install some useful packages that we will need:
+
+```
+sudo apt install -y zip unzip build-essential tree
+```
+
+**File Systems.** WSL has its own filesystem that is distinct from the Windows file system, though there are ways to access each from the other.
+
+- When you launch Ubuntu and get the $ prompt, you are in the WSL file system. Your home directory there is named `~`, which is a built-in alias for `/home/your_ubuntu_user_name`. You can run `explorer.exe .` (note the dot at the end of that) to open your Ubuntu home directory in Windows explorer.
+- From Ubuntu, you can access your Windows home directory at the path `/mnt/c/Users/your_windows_user_name/`.
+- From Windows Explorer, you can access your Ubuntu home directory under the Linux icon in the left-hand list (near “This PC” and “Network”), then navigating to Ubuntu → `home` → `your_ubuntu_user_name`. Or you can go there directly by typing into the Windows Explorer path bar: `\\wsl$\Ubuntu\home\your_ubuntu_user_name`.
+
+Practice accessing your Ubuntu and Windows home directories now, and make sure you can recognize which you are in. For advanced information, see Microsoft’s [guide to Windows and Linux file systems](https://docs.microsoft.com/en-us/windows/wsl/filesystems).
+
+We recommend storing your OCaml development work in your Ubuntu home directory, not your Windows home directory. By implication, Microsoft also recommends that in the guide just linked.
+
+*End of Clarkson@Cornell 3110 Windows Setup Instructions*
+
+---
 
 > + **These Instructions are cribbed in part from Cornell's CS3110 Spring 2020**
-> + **These instructions presume that you are running Windows 10. If you are running an earlier version of Windows, these instructions won't work.**
+> + **These instructions presume that you are running Windows 11 or Windows 10 with Version 2004 or more recent. If you are running an earlier version of Windows, these instructions won't work.**
 > + These instructions are rather lengthy and detailed. It's important to follow them carefully. Contact a course staffer if you run into problems.
 
 The basic idea is to make use of the Windows Subsystem for Linux (WSL) and Microsoft's vscode editor. Our setup has 5 parts:
 
-1. Enable Windows Subsystem for Linux (WSL) and Install Ubuntu
+1. Enable Windows Subsystem for Linux (WSL2) and Install the Ubuntu Linux System
 2. Set up your Work Area
 3. Set up the Basic OCaml Ecosystem
 4. Add Support for Graphical Applications
 5. Install and Configure the vscode Editor
 
-### 1. Enable Windows Subsystem for Linux (WSL) and Install Ubuntu
+### 1. **Update Ubuntu** [About 4 mintes] 
 
-[Here is an (optional) introduction](https://github.com/michaeltreat/Windows-Subsystem-For-Linux-Setup-Guide/blob/master/readmes/01_preface.md) to what WSL is and why you need it.
+Software is generally deployed in *packages* and most systems have tools for managing packages. One of the more widely used package managers in the Unix environment is the *advanced packaging tool* `apt`. Enter the following command into the shell:
 
-**Don’t skip step 1:** *a number of problems have resulted from laptops having older versions of Windows 10*.
-
-1. **Check your Windows Build** Run the `winver` program by selecting *Start* then typing "winver" (then hit Enter). A dialog box will open. Look on the second line for “OS Build XXXXX.YYY”. If the XXXXX part of that is a number smaller than 17643, you're going to need to update Windows. If so, go to *Settings* → *Update & Security* → *Windows Update* → *Check for updates* and install updates. When finished, run `winver` again to confirm that the build is now 17643 or greater. If you can’t get a recent build, your hardware might be a bit older, get in touch with the instructor.
-
-2. **Record your Windows Username** Select *Start* and then type "cmd". A Windows cmd shell will open. The prompt should be of the form`C:\Users\username>` where `username` is your Windows username. Write this down or remember it, we'll need it later. Close the cmd shell.
-
-3. **Enable WSL** Open Windows PowerShell as Administrator. To do that, select *Start*, type "PowerShell" then right-click on *Windows PowerShell* (it should be at the top as the best match), and select *Run as administrator*. Select *Yes* to allow changes. At the prompt (which is probably something like `PS C:\windows\system32>`), enter the following command.
-
-   > If you're careful you can type in all of the commands in this Setup guide but cutting and pasting is generally more reliable.
-   ```bash
-   Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-   ```
-   If you're prompted to restart, do so. Otherwise, close PowerShell.
-
-4. **Install Ubuntu 20.4** Select *Start*, type "Microsoft Store", and open the *Microsoft Store* app. Click *Search*, and type "Ubuntu". Scroll down to Apps, and choose **Ubuntu 20.04 LTS**. From the Ubuntu page. Select *Get*. After the download finishes, click *Launch*. The install will then finish.
-
-   > You may want to pin the Ubuntu app to your Windows *Start* menu. You can do this by right-clicking on the Ubuntu icon.
-
-   You'll be prompted to create a UNIX username and password. You can use any username and password you wish. It has no bearing on your Windows username and password (though you are free to re-use those).
-
-   > Heads up! You'll need to remember your Unix username and password for future use.
-
-   You're now interacting with the Unix operating systems using a terminal application running the Bash shell. The prompt will look something like
-   ```bash
-   user@machine:~$
-   ```
-
-   You’ll want to make sure copy-and-paste into the terminal is enabled: Click on the icon on the top left of the shell window, select *Properties*, and make sure the checkbox for *Use Ctrl+Shift+C/V as Copy/Paste* is checked. Now **Ctrl+Shift+C** will copy and **Ctrl+Shift+V** will paste into the terminal.
-
-   > + Heads up! You have to include **Shift** as part of that keystroke.
-   >
-   > + If you don’t see the *Use Ctrl+Shift+C/V as Copy/Paste* option, your Windows build is too old. Make sure you updated Windows to a new enough build, as described above. Right-click might still work to paste even if you don’t have a new enough build.
-
-5. **Update Ubuntu** [About 4 mintes] Software is generally deployed in *packages* and most systems have tools for managing packages. One of the more widely used package managers in the Unix environment is the *advanced packaging tool* `apt`. Enter the following command into the shell:
-   ```bash
+5. ```bash
    sudo apt update
    ```
    You'll be prompted for the UNIX password you chose earlier. The command `apt update` updates the list of packages managed by `apt` on your system. The prefix `sudo` tells Unix to run the  `apt udate` command as the *system administrator*, aka *super user*.
-
+   
    > Heads up!  Running Unix commands with `sudo` is potentially dangerous and should't be done lightly. Do not get into the habit of putting `sudo` in front of commands.
-
+   
    Now run the `apt upgrade` command to actually upgrade all the `apt` software packages; this took about 3 minutes on my system. If you're prompted about configuring libssl, just hit Enter to accept the default choices.
    ```bash
    sudo apt ungrade -y
@@ -412,20 +404,18 @@ The OCaml ecosystem has 3 major parts:
 2. A *package manager* called [opam](https://opam.ocaml.org/); this manages libraries of OCaml code.
 3. A *build manager* called [dune](https://dune.build/); this manages the compilation, linking and execution of OCaml code.
 
-2. Install the OCaml package manager `opam`. [About 4 Minutes]
+2. Install the OCaml package manager `opam`. 
 
    ```bash
-   sudo add-apt-repository ppa:avsm/ppa
-   sudo apt-get update
    sudo apt install opam
    ```
-
-   > Some of the above may indicate errors, but I found that ignoring the errors and completing the last line worked out.
+   
+   > If this doesn't work, get in touch with the instructor.
 
 3. Initialize the `opam` package manager:
 
    ```bash
-   opam init --disable-sandboxing
+   opam init --bare -a -y
    ```
 
    > **Heads up! The two quote marks in the `eval` command below are *backquotes* (upper left, below the `esc` key).**
@@ -476,6 +466,34 @@ The OCaml ecosystem has 3 major parts:
    ```
 
    If you see *"Hello World!"*, great! Press on. If you don't, something is amiss, contact a course staffer.
+
+---
+
+*Start of Copied from Clarkson@Cornell*
+
+**Double Check OCaml**
+
+If you’re having any trouble with your installation, follow these double-check instructions. Some of them repeat the tips we provided above, but we’ve put them all here in one place to help diagnose any issues.
+
+First, reboot your computer. We need a clean slate for this double check.
+
+Second, run utop, and make sure it works. If it does not, here are some common issues:
+
+Are you in the right Unix prompt? On Mac, make sure you are in whatever Unix shell is the default for your Terminal: don’t run bash or zsh or anything else manually to change the shell. On Windows, make sure you are in the Ubuntu app, not PowerShell or Cmd.
+
+Is the OPAM environment set? If utop isn’t a recognized command, run eval $(opam env) then try running utop again. If utop now works, your login shell is somehow not running the right commands to automatically activate the OPAM environment; you shouldn’t have to manually activate the environment with the eval command. Probably something went wrong earlier when you ran the opam init command. To fix it, follow the “redo” instructions below.
+
+Is your switch listed? Run opam switch list and make sure a switch named cs3110-2022fa is listed, that it has the 4.14.0 compiler, and that it is the active switch (which is indicated with an arrow beside it). If that switch is present but not active, run opam switch cs3110-2022fa then see whether utop works. If that switch is not present, follow the “redo” instructions below.
+
+Redo Instructions: Remove the OPAM directory by running `rm -r ~/.opam`. Then go back to the OPAM initialization step in the instructions way above, and proceed forward. Be extra careful to use the exact OPAM commands given above; sometimes mistakes occur when parts of them are omitted. Finally, redo the double check: reboot and see whether utop still works.
+
+**Important**
+
+You want to get to the point where utop immediately works after a reboot, without having to type any additional commands.
+
+*End of Copied from Clarkson@Cornell*
+
+---
 
 ### 4. Add Support for Graphical Programs
 
@@ -536,57 +554,89 @@ You made it this far, great job! The last step is to install Microsoft's **vscod
 code .
 ```
 
-meaning, fire up vscode and have it open the current working directory. This will start vscode from the command line, assuming that the `code` command is defined on Ubuntu's `PATH` environment variable. But there is a bit of a hitch in running vscode in this way. On installation, vscode has a checkbox offering to set the `PATH` variable. But in practice, it doesn't always set this variable as advertised. To correct this problem, we've provided a bash script called `patchVSCode`, we'll describe when and how to use it.
-
-Fire up a browser in Windows and [install vscode for Windows](https://code.visualstudio.com/download). At the end of the installation, the installer offers to start vscode. Uncheck that box. If you miss this step and the installer starts vscode, exit vscode. In an Ubuntu shell type
-
-```bash
-cd ~/csci1103/setup
-git pull
-./patchVSCode YOUR_WINDOWS_USERNAME
-```
-
-Exit Ubuntu and restart it. Now type
-
-```bash
-which code
-```
-
-This should return the path to the vscode program `/mnt/c/Users/.../Programs/Microsoft VS Code/bin`. If so, you're all set. Now fire up vscode in WSL.
-
-```bash
-cd ~/csci1103/setup/test/hello/src
-code .
-```
-
-We're now going to install several *Extensions* that customize vscode to work well with OCaml (Extensions are known as *Packages* in Atom). You can search for Extensions in vscode by selecting the blocky icon on the left.
-
-![vscodeextensions](./img/vscodeblocky.png)
-
-Typing `@installed` in the search box at the top left lists all of the already-installed Extensions.
-
-When you fire up vscode, it will notice that you have enabled WSL so it will recommend that you install the **Remote - WSL** Extension. Install the following Extensions:
-
-1. Remote - WSL (from Microsoft, v 0.44.4 or better)
-2. Remote Development (from Microsoft, v 0.20.0 or better)
-3. OCaml and Reason IDE (from Darin Morrison, v 1.038 or better)
-4. Live Share (from Microsoft, v 1.02731 or better)
-
-Select the **Ocaml and Reason IDE** Extension, it should have a green button for **installing it on WSL**. It's important that you select that button. Navigate to the file `/bin/main.ml`. You should see something like
-
-![vscodeclean](./img/merlinclean.png)
-
-Note the annotations `OCaml` and `merlin` on the right in the blue bar on the bottom.
-
-Merlin is the wizard of errors. (!) If you introduce an error, say, by deleting the quotation mark at the end of line 8, you should see an orange squiggle below and a small red highlight bar on the right, as in
-
-![merlin](./img/merlin.png)
-
-This is an indication that merlin has detected a mistake. If you restore the correct code by reintroducing the quotation mark, the error annotations should disappear.
+meaning, fire up vscode and have it open the current working directory. This will start vscode from the command line. Note that from WSL/Ubuntu we are running vscode which was installed in Windows. 
 
 ---
 
-So no we have the development process:
+*Start of Mostly Clarkson@Cornell*
+
+Visual Studio Code is a great choice as a code editor for OCaml. (Though if you are already a power user of Emacs or Vim those are great, too.)
+
+First, download and install [Visual Studio Code](https://code.visualstudio.com/) (henceforth, VS Code). 
+
+Launch VS Code. Then open the extensions pane, either by going to View → Extensions, or by clicking on the icon for it in the column of icons on the left — it looks like four little squares, the top-right of which is separated from the other three.
+
+Next, install the “**Remote - WSL**” extension. Then open a WSL window by using the command “Remote-WSL: New WSL Window”. The first time you do this, it will install some additional software. After that completes, you will see a green “WSL: Ubuntu” indicator in the bottom-left of the VS Code window. **Make sure that you see “WSL: Ubuntu” there before proceeding with the instructions below.** If you see just an icon that looks like >< then click it, and choose “New WSL Window” from the Command Palette that opens.
+
+Third, close any open terminal shells — or just logout or reboot — to let the new path settings take effect, so that you will later be able to launch VS Code from the terminal.
+
+Fourth, again open the VS Code extensions pane. Search for and install the “**OCaml Platform**” extension from OCaml Labs. Be careful to install the extension with exactly that name. (If you happen to note a “build failing” icon on the extension’s page, don’t be concerned.)
+
+**Warning**
+
+The extensions named simply “OCaml” or “OCaml and Reason IDE” are not the right ones. They are both deprecated.
+
+**Warning**
+
+When you install the OCaml Platform extension make sure to use the button that says “**Install in WSL: Ubuntu**”, not with a button that says only “Install”. If you’ve already done the latter, that’s okay; but, you need to also install on WSL. If you can’t find a button that says “Install in WSL” then you probably do not have the green “WSL: Ubuntu” indicator at the bottom-left of your VS Code window, either. Follow the instructions above to open a WSL window. From there, try again to install the OCaml Platform extension using the “Install in WSL” button.
+
+**Double Check VS Code**
+
+Let’s make sure VS Code’s OCaml support is working.
+
+Reboot your computer again. (Yeah, that really shouldn’t be necessary. But it will detect so many potential mistakes now that it’s worth the effort.)
+
+Open a fresh new Unix shell. Windows: remember that’s the Ubuntu, not PowerShell or Cmd. Mac: remember that you shouldn’t be manually switching to a different shell by typing zsh or bash.
+
+Navigate to a course home directory `/home/YOURUSERNAME/csci1103`In that directory open VS Code by running:
+
+```bash
+code .
+```
+
+
+Go to File → New File. Save the file with the name test.ml. VS Code should give it an orange camel icon.
+
+Type the following OCaml code then press Return/Enter:
+
+```ocaml
+let x : int = 3110
+```
+
+
+As you type, VS Code should colorize the syntax, suggest some completions, and add a little annotation above the line of code. Try changing the int you typed to string. A squiggle should appear under 3110. Hover over it to see the error message. Go to View → Problems to see it there, too. Add double quotes around the integer to make it a string, and the problem will go away.
+
+If you don’t observe those behaviors, something is wrong with your install. Here’s how to proceed:
+
+Make sure that, from the same Unix prompt as which you launched VS Code, you can successfully complete the double-check instructions for your OPAM switch: can you run utop? is the right switch active? If not, that’s the problem you need to solve first. Then return to the VS Code issue. It might be fixed now.
+
+If you’re on WSL and VS Code does add syntax highlighting but does not add squiggles as described above, and/or you get an error about “Sandbox initialization failed”, then double-check that you see a green “WSL” indicator in the bottom left of the VS Code window. If you do not, make sure you installed the “Remote - WSL” extension as described above, and that you are launching VS Code from Ubuntu rather than PowerShell or from the Windows GUI.
+
+If you’re still stuck with an issue, try uninstalling VS Code, rebooting, and re-doing all the install instructions above from scratch. Pay close attention to any warnings or errors.
+
+**Warning**
+
+While troubleshooting any VS Code issues, do not hardcode any paths in the VS Code settings file, despite any advice you might find online. That is a band-aid, not a cure of whatever the underlying problem really is. More than likely, the real problem is an OCaml environment issue that you can investigate with the OCaml double-check instructions above.
+
+**VS Code Settings**
+We recommend tweaking a few editor settings. Open the user settings JSON file by (i) going to View → Command Palette, (ii) typing “user settings json”, and (iii) selecting Open User Settings (JSON). Copy and paste these settings into the window:
+
+```
+{
+    "editor.tabSize": 2,
+    "editor.rulers": [ 80 ],
+    "editor.formatOnSave": true
+}
+```
+
+
+Save the file and close the tab.
+
+*End of Mostly from Clarkson@Cornell Instructions*
+
+---
+
+So now we have the development process:
 
 1. Open a command shell in Ubuntu;
 
@@ -645,7 +695,7 @@ The unix `dune` command builds (i.e., compiles and links) executable code. All o
 
 ### Wrapping Up
 
-To review, you'll use the [atom](https://atom.io/) or [vscode](https://code.visualstudio.com/) text editor to develop your problem set solutions and you'll use `dune` to compile and test your work. As you work on your code, you should use Unix's `git` commands `git add` and `git commit` to commit your work to your local git repository periodically.
+To review, you'll use the [vscode](https://code.visualstudio.com/) text editor to develop your problem set solutions and you'll use `dune` to compile and test your work. As you work on your code, you should use Unix's `git` commands `git add` and `git commit` to commit your work to your local git repository periodically.
 
 When your code is working (and looks great!) you can submit it for grading using `git push` to transfer your local working repository to your master problem set repository on the Github course website.
 
@@ -655,4 +705,4 @@ cd ~/csci1103/ps1-YOUR_GITHUB_ID/
 git push
 ```
 
-After reviewing your work, course staff will leave comments and record your problem set score in the local BC [gradebook on Canvas](https://bostoncollege.instructure.com/courses/1614229/).
+After reviewing your work, course staff will leave comments and record your problem set score in the local BC [gradebook on Canvas](https://bostoncollege.instructure.com/courses/1634611/).
