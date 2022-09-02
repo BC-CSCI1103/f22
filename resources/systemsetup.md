@@ -335,7 +335,7 @@ Software is generally deployed in *packages* and most systems have tools for man
    
    Now run the `apt upgrade` command to actually upgrade all the `apt` software packages; this took about 3 minutes on my system. If you're prompted about configuring libssl, just hit Enter to accept the default choices.
    ```bash
-   sudo apt ungrade -y
+   sudo apt upgrade -y
    ```
 6. **Install a few other Unix Packages** [About 7 minutes] Several of the OCaml tools that we'll be using rely on lower-level operating system tools and packages. Install these as follows. Generally speaking, you should respond affirmatively when prompted.
    ```bash
