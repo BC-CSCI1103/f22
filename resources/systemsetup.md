@@ -561,7 +561,7 @@ dune exec bin/main.exe
 
 You should see something like 
 
-<img src="./img/stopngo.png" width=300>
+<img src="./img/stopNgo.png" width=300>
 
 If you have trouble with any of the above steps, get in touch with course staff.
 
