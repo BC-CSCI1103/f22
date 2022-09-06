@@ -23,7 +23,6 @@ are staffed by the course Teaching Assistants
 
 **Nicole Lockwood**
 
-+ **Section 101002**: Tuesdays 6PM [Zoom](https://bccte.zoom.us/j/6103994178).
 + **Office Hours** Mondays 2PM - 3PM, Wednesdays 5PM - 7PM, Fridays 2PM - 3PM, 245 Beacon St. Rm. 122.
 
 ---
