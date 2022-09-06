@@ -31,17 +31,16 @@ Robert Muller — Boston College
 
 <details open> <summary>Liam Murphy, Head Teaching Assistant</summary>
 
-+ **email**: murpaue AT BC DOT EDU
-Nicole Lockwood <lockwoni@bc.edu>,
+  + **email**: murpaue AT BC DOT EDU
 
   + **Office Hours** Thursdays 2PM - 4PM.
 </details>
 
 <details open> <summary>Nicole Lockwood</summary>
 
-+ **email**: lockwoni AT BC DOT EDU
+  + **email**: lockwoni AT BC DOT EDU
 
-+ **Office Hours** Mondays 2PM - 3PM, Wednesdays 5PM - 7PM, Fridays 2PM - 3PM.
+  + **Office Hours** Mondays 2PM - 3PM, Wednesdays 5PM - 7PM, Fridays 2PM - 3PM.
 
 </details>
 
