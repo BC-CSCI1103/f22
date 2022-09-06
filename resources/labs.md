@@ -10,25 +10,21 @@ Robert Muller — Boston College
 
 Lab meetings are an especially important part of CSCI 1103. Students will work on topics related to the problem set and to the lecture material. Attendance and active participation in labs is an important component of the class participation component of the course grade.
 
-**NB: There will be no lab meeting in week 1.**
-
 ---
+
 ### Meetings
 
-**Gavin Bloom, Head Teaching Assistant**
+Labs meet every Wednesday at 3PM in 245 Beacon St. Rm. 103. Labs
+are staffed by the course Teaching Assistants
 
-+ **Section 101001**: Tuesdays, 5PM, [Zoom](https://bccte.zoom.us/j/9694152673).
-+ **Office Hours** Thursdays 1PM -- 4:00PM.
+**Liam Murphy, Head Teaching Assistant**
 
-**Emma Sabbadini**
++ **Office Hours** Thursdays 2PM -- 4:00PM, 245 Beacon St. Rm. 122.
+
+**Nicole Lockwood**
 
 + **Section 101002**: Tuesdays 6PM [Zoom](https://bccte.zoom.us/j/6103994178).
-+ **Office Hours** Tuesdays 7PM -- 8PM, Fridays 12PM -- 2PM.
-
-**Callie Sardina**
-
-+ **Section 101003**: Wednesdays 5PM [Zoom](https://bccte.zoom.us/j/2175950858?pwd=QkpyTkVkR0IremQ5eWFGeStIOHdXUT09).
-+ **Office Hours** Wednesdays 6PM -- 8PM, Sundays 4PM -- 5PM.
++ **Office Hours** Mondays 2PM - 3PM, Wednesdays 5PM - 7PM, Fridays 2PM - 3PM, 245 Beacon St. Rm. 122.
 
 ---
 
