@@ -23,17 +23,23 @@ Robert Muller — Boston College
 
 + **Instructor:** [Robert Muller](https://dogfishbar.github.io )
 
++ **email**: robert DOT muller AT BC DOT EDU
+
 + **Office Hours**: Tuesdays 3PM - 5PM, Wednesdays 4PM - 5PM, 245 Beacon St. Rm 508.
 
 **Teaching Assistants:**
 
 <details open> <summary>Liam Murphy, Head Teaching Assistant</summary>
 
++ **email**: murpaue AT BC DOT EDU
+Nicole Lockwood <lockwoni@bc.edu>,
+
   + **Office Hours** Thursdays 2PM - 4PM.
 </details>
 
-
 <details open> <summary>Nicole Lockwood</summary>
+
++ **email**: lockwoni AT BC DOT EDU
 
 + **Office Hours** Mondays 2PM - 3PM, Wednesdays 5PM - 7PM, Fridays 2PM - 3PM.
 
