@@ -97,20 +97,20 @@ Robert Muller — Boston College
 | [6](https://github.com/BC-CSCI1103/Week06) |  10  | T 10/04/22 | Some cairns on the path to good code; Recursion & Mathematical Induction -- learning from`sublists` |
 |      |  11  | R 10/06/22 | Functions are values: List.map, List.for_all and List.exists.: function slope, Riemann sums |
 | [7](https://github.com/BC-CSCI1103/Week07) |    | T 10/11/22 | **No Meeting** |
-|      |  12  | R 10/13/22 | Symbols and Digital Representations; Positional Numeral Systems, Binary & Hexadecimal - **Dictionaries: Associative Arrays, Association Lists and BSTs** |
-| [8](https://github.com/BC-CSCI1103/Week08)    | 13 | T 10/18/22 | Logic Gates; a Ripple-Carry Adder, Machines & Storage Architecture, Bits, Bytes & Words |
-|      |  14  | R 10/20/22 | SVM — A Simple Virtual Machine, Working with Memory: LOD & STO; **Divide and Conquer: Mergesort, the Babylonian Bisection Algorithm for sqrt**|
-| [9](https://github.com/BC-CSCI1103/Week09)    |  15  | T 10/25/22 | Dynamic Memory Diagrams; **Symbols and Digital Representations; Positional Numeral Systems, Binary & Hexadecimal** |
-|      |  16  | R 10/27/22 | Imperative Forms in OCaml, Arrays |
-|  [10](https://github.com/BC-CSCI1103/Week10)  |  17  | T 11/01/22 | Example: PCM & Digital Audio, Working with Digital Audio |
-|      |  18  | R 11/03/22 | Working with 2D-Arrays; Bitmaps, Search: 8-Queens, Sudoku & Complexity |
-|  [11](https://github.com/BC-CSCI1103/Week11)  |  19  | T 11/08/22 | Backtracking in 8-Queens; More Digital Images: zooming;; Review of Storage Diagrams; **Imperative Forms in OCaml, Arrays** Dictionaries: Associative Arrays, Association Lists |
-|      |  20  | R 11/10/22 | Dictionaries, Binary Search Trees |
-|  [12](https://github.com/BC-CSCI1103/Week12)  |  21  | T 11/15/22 | More on Dictionaries & BSTs; Balanced BSTs; Performance;; Working with Text Strings; The String Module |
-|      |  22  | R 11/17/22 | Working with Text: Shannon's Markov Model of English Text |
-|  [13](https://github.com/BC-CSCI1103/Week13)  |  23  | T 11/22/22 | Working with Text: The Needleman-Wunsch DNA Sequence Alignment Algorithm |
+|      |  12  | R 10/13/22 | **Dictionaries: Association Lists; Binary Trees and Binary Search Trees** |
+| [8](https://github.com/BC-CSCI1103/Week08)    | 13 | T 10/18/22 | **Divide and Conquer: Mergesort** |
+|      |  14  | R 10/20/22 | **Balanced BSTs - Left-leaning Red/Black Trees**; **The Babylonian Bisection Algorithm for sqrt** |
+| [9](https://github.com/BC-CSCI1103/Week09)    |  15  | T 10/25/22 | **Symbols and Positional Numeral Systems; positional addition; toDecimal and decimalTo** |
+|      |  16  | R 10/27/22 | **Binary Numerals: Logic Gates and Truth Tables; A Full-Adder Circuit** |
+|  [10](https://github.com/BC-CSCI1103/Week10)  |  17  | T 11/01/22 | **A Ripple-Carry Adder, Two's Complement representation of integers; Hexadecimal** |
+|      |  18  | R 11/03/22 | **Storage Architecture, Bytes & Words, Memory Addresses; SVM — A Simple Virtual Machine** |
+|  [11](https://github.com/BC-CSCI1103/Week11)  |  19  | T 11/08/22 | **SVM Lod & Sto; Linked and Block Storage** |
+|      |  20  | R 11/10/22 | **SVM Add Array** |
+|  [12](https://github.com/BC-CSCI1103/Week12)  |  21  | T 11/15/22 | **Imperative Features: References, Mutable Record Fields; Arrays & For-loops** |
+|      |  22  | R 11/17/22 | **Second Midterm** |
+|  [13](https://github.com/BC-CSCI1103/Week13)  |  23  | T 11/22/22 | **Dynamic Storage Diagrams** |
 |      |      | R 11/24/22 | **Thanksgiving: No Meeting** |
-|  [14](https://github.com/BC-CSCI1103/Week14)  |  24  | T 11/29/22 | Data Integrity; Exposing Data Constraints to the Type Checker;; Message Passing Style; Object-Oriented Programming |
+|  [14](https://github.com/BC-CSCI1103/Week14)  |  24  | T 11/29/22 | Example: PCM & Digital Audio, Working with Digital Audio; Working with 2D-Arrays; Bitmaps, Search: 8-Queens, Sudoku & Complexity; Working with Text: The Needleman-Wunsch DNA Sequence Alignment Algorithm; Working with Text: Shannon's Markov Model of English TextData Integrity; Exposing Data Constraints to the Type Checker;; Message Passing Style; Object-Oriented Programming; Example: PCM & Digital Audio, Working with Digital Audio |
 |      | 25 | R 12/01/22 | Abstract Data Types in OCaml |
 |  15  |  26  | T 12/06/22 | Abstract Data Types in Java |
 |      |  27  | R 12/08/22 | **Last Meeting, review and wrap-up** |
