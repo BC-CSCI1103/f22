@@ -110,7 +110,7 @@ Robert Muller — Boston College
 |      |  22  | R 11/17/22 | **Second Midterm** |
 |  [13](https://github.com/BC-CSCI1103/Week13)  |  23  | T 11/22/22 | **Dynamic Storage Diagrams** |
 |      |      | R 11/24/22 | **Thanksgiving: No Meeting** |
-|  [14](https://github.com/BC-CSCI1103/Week14)  |  24  | T 11/29/22 | Example: PCM & Digital Audio, Working with Digital Audio; Working with 2D-Arrays; Bitmaps, Search: 8-Queens, Sudoku & Complexity; Working with Text: The Needleman-Wunsch DNA Sequence Alignment Algorithm; Working with Text: Shannon's Markov Model of English TextData Integrity; Exposing Data Constraints to the Type Checker;; Message Passing Style; Object-Oriented Programming; Example: PCM & Digital Audio, Working with Digital Audio |
+|  [14](https://github.com/BC-CSCI1103/Week14)  |  24  | T 11/29/22 | Topic | 
 |      | 25 | R 12/01/22 | Abstract Data Types in OCaml |
 |  15  |  26  | T 12/06/22 | Abstract Data Types in Java |
 |      |  27  | R 12/08/22 | **Last Meeting, review and wrap-up** |
