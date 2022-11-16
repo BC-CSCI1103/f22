@@ -97,14 +97,14 @@ Robert Muller — Boston College
 | [6](https://github.com/BC-CSCI1103/Week06) |  10  | T 10/04/22 | Some cairns on the path to good code; Recursion & Mathematical Induction -- learning from`sublists` |
 |      |  11  | R 10/06/22 | Functions are values: List.map, List.for_all and List.exists.: function slope, Riemann sums |
 | [7](https://github.com/BC-CSCI1103/Week07) |    | T 10/11/22 | **No Meeting** |
-|      |  12  | R 10/13/22 | Symbols and Digital Representations; Positional Numeral Systems, Binary & Hexadecimal |
+|      |  12  | R 10/13/22 | Symbols and Digital Representations; Positional Numeral Systems, Binary & Hexadecimal - **Dictionaries: Associative Arrays, Association Lists and BSTs** |
 | [8](https://github.com/BC-CSCI1103/Week08)    | 13 | T 10/18/22 | Logic Gates; a Ripple-Carry Adder, Machines & Storage Architecture, Bits, Bytes & Words |
-|      |  14  | R 10/20/22 | SVM — A Simple Virtual Machine, Working with Memory: LOD & STO |
-| [9](https://github.com/BC-CSCI1103/Week09)    |  15  | T 10/25/22 | Dynamic Memory Diagrams |
+|      |  14  | R 10/20/22 | SVM — A Simple Virtual Machine, Working with Memory: LOD & STO; **Divide and Conquer: Mergesort, the Babylonian Bisection Algorithm for sqrt**|
+| [9](https://github.com/BC-CSCI1103/Week09)    |  15  | T 10/25/22 | Dynamic Memory Diagrams; **Symbols and Digital Representations; Positional Numeral Systems, Binary & Hexadecimal** |
 |      |  16  | R 10/27/22 | Imperative Forms in OCaml, Arrays |
 |  [10](https://github.com/BC-CSCI1103/Week10)  |  17  | T 11/01/22 | Example: PCM & Digital Audio, Working with Digital Audio |
 |      |  18  | R 11/03/22 | Working with 2D-Arrays; Bitmaps, Search: 8-Queens, Sudoku & Complexity |
-|  [11](https://github.com/BC-CSCI1103/Week11)  |  19  | T 11/08/22 | Backtracking in 8-Queens; More Digital Images: zooming;; Review of Storage Diagrams; Dictionaries: Associative Arrays, Association Lists |
+|  [11](https://github.com/BC-CSCI1103/Week11)  |  19  | T 11/08/22 | Backtracking in 8-Queens; More Digital Images: zooming;; Review of Storage Diagrams; **Imperative Forms in OCaml, Arrays** Dictionaries: Associative Arrays, Association Lists |
 |      |  20  | R 11/10/22 | Dictionaries, Binary Search Trees |
 |  [12](https://github.com/BC-CSCI1103/Week12)  |  21  | T 11/15/22 | More on Dictionaries & BSTs; Balanced BSTs; Performance;; Working with Text Strings; The String Module |
 |      |  22  | R 11/17/22 | Working with Text: Shannon's Markov Model of English Text |
