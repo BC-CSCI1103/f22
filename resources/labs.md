@@ -40,8 +40,8 @@ are staffed by the course Teaching Assistants
 |  7   | [Numeral Systems & SVM](https://classroom.github.com/a/Nn8FrKV_) | [Solution](https://classroom.github.com/a/yzzAneJw) |
 |  8   | [Working with One Dimensional Arrays](https://classroom.github.com/a/3q-T1hMW) | [Solution](https://classroom.github.com/a/6Q8vpGXf) |
 |  9   | [Working with Two-Dimensional Arrays](https://classroom.github.com/a/YNjDdzXJ) | [Solution](https://classroom.github.com/a/EKegUBgd) |
-|  10  | [Parallel Array Implementation of Dictionaries](https://classroom.github.com/a/qlsHj4Sk) | [Solution](https://classroom.github.com/a/7xtBCXbk) |
-|  11  | Project Workshop                                             | |
+|  10  | [Eight Queens](https://classroom.github.com/a/7Qx_bgJ9) | [Solution](https://classroom.github.com/a/xQ1TpOPI) |
+|  11  | Project Workshop/Final Review                                             | |
 
 
 
